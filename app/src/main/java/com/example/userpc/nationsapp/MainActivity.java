@@ -16,6 +16,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Parse.initiliaze(new Parse.Configuration.Builder(this)
+                .applicationId("")
+                .clientKey(null)
+                .server("http://*/parse/")
+                .build()
+        );
+
         init();
 
         testButton.setOnClickListener(new View.OnClickListener() {
