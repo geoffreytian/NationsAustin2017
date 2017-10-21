@@ -5,12 +5,17 @@ import android.widget.TextView;
 import android.widget.EditText;
 import android.app.Activity;
 import android.os.Bundle;
+import android.content.Intent;
+
+
+
 
 public class MainActivity extends Activity {
 
     TextView testLabel;
     Button testButton;
     EditText editText;
+    Button changeView;//
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +27,14 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 String str = editText.getText().toString();
                 testLabel.setText(str);
+                String toAdd = testLabel.getText().toString();
+
                 editText.setText("");
+            }
+        });
+        changeView.setOnClickListener(new View.OnClickListener() {//
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MyOtherActivity.class));
             }
         });
     }
@@ -30,8 +42,9 @@ public class MainActivity extends Activity {
 
     //This method initializes the sensors, wifi, and UI elements
     public void init() {
-        testLabel = (TextView) findViewById(R.id.textView);
+        testLabel = (TextView) findViewById(R.id.txt);
         testButton = (Button) findViewById(R.id.button);
         editText = (EditText) findViewById(R.id.editText);
+        changeView = (Button) findViewById(R.id.button2);//
     }
 }
