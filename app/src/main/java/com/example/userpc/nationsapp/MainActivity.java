@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 package com.example.userpc.nationsapp;
 
 import android.support.v7.app.ActionBar;
@@ -38,3 +42,25 @@ public class MainActivity extends Activity {
         editText = (EditText) findViewById(R.id.editText);
     }
 }
+<<<<<<< Updated upstream
+=======
+=======
+package com.example.userpc.nationsapp;
+
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.EditText;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
