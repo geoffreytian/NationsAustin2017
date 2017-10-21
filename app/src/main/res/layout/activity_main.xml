@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< Updated upstream
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="fill_parent"
-              android:orientation="vertical"
-              tools:context=".AddList" >
+              android:orientation="vertical" >
 
     <LinearLayout
             android:id="@+id/input1"
@@ -34,64 +32,22 @@
             android:gravity="center_vertical">
 
         <EditText
-                android:id="@+id/editText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:singleLine="true" >
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:singleLine="true">
 
             <requestFocus />
         </EditText>
 
         <Button
-                android:id="@+id/enter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="Add" />
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Add" />
     </LinearLayout>
 
 </LinearLayout>
-=======
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< Updated upstream
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-=======
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
->>>>>>> Stashed changes
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_marginTop="59dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="71dp"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="editText"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp" />
-
-</RelativeLayout>
->>>>>>> Stashed changes
