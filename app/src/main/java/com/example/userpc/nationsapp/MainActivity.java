@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 
     //This method initializes the sensors, wifi, and UI elements
     public void init() {
-        testLabel = (TextView)findViewById(R.id.textView);
+        testLabel = (TextView)findViewById(R.id.txt);
         testButton = (Button) findViewById(R.id.button);
         editText = (EditText) findViewById(R.id.editText);
     }
