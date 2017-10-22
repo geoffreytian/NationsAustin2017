@@ -2,6 +2,7 @@ package com.example.userpc.nationsapp;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.ImageView;
 import android.widget.EditText;
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ public class MainActivity extends Activity {
     EditText editText;
 
     Button changeView;//
-
+    ImageView mission;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,10 +47,11 @@ public class MainActivity extends Activity {
     public void init() {
 
 
-        testLabel = (TextView) findViewById(R.id.txt);
+        testLabel = (TextView) findViewById(R.id.dragonslayer);
         testButton = (Button) findViewById(R.id.button);
         editText = (EditText) findViewById(R.id.editText);
         changeView = (Button) findViewById(R.id.button2);//
+        mission = (ImageView) findViewById(R.id.imageView);
 
     }
 }
