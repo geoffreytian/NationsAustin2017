@@ -5,13 +5,14 @@ import android.widget.TextView;
 import android.widget.EditText;
 import android.app.Activity;
 import android.os.Bundle;
+import android.content.Intent;
 
 public class MainActivity extends Activity {
 
     TextView testLabel;
     Button testButton;
     EditText editText;
-
+    Button ChangeButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,13 +26,21 @@ public class MainActivity extends Activity {
                 editText.setText("");
             }
         });
+
+        ChangeButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MyOtherActivity.class));
+            }
+        });
     }
 
 
     //This method initializes the sensors, wifi, and UI elements
     public void init() {
-        testLabel = (TextView) findViewById(R.id.textView);
+        testLabel = (TextView) findViewById(R.id.dragonslayer);
         testButton = (Button) findViewById(R.id.button);
         editText = (EditText) findViewById(R.id.editText);
+        ChangeButton = (Button) findViewById(R.id.button2);
+
     }
 }
